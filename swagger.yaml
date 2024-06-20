@@ -1,3 +1,4 @@
+
 swagger: '2.0'
 info:
   title: Bank Argent API documentation
@@ -346,6 +347,9 @@ definitions:
         enum: [food, entertainment, utilities, housing, transportation, other]
       notes:
         type: string
+      balanceAfter:  # Nouveau champ ajouté ici
+        type: number
+        description: Solde après la transaction
   TransactionList:
     type: array
     items:
